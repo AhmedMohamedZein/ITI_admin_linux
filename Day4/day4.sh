@@ -8,7 +8,7 @@ touch /tmp/list.log #crating the log file in the tmp folder if it does not exist
 
 while [ true ]
     do
-        ls /var/log/ >> /usr/local/bin/list.log  #every 5 seconds add the ls of /var/log into the /tmp/list.log file
+        ls /var/log/ >> /tmp/list.log  #every 5 seconds add the ls of /var/log into the /tmp/list.log file
         sleep 5
 done
 
