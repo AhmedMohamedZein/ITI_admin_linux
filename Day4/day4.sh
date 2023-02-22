@@ -51,7 +51,7 @@ systemctl start day4_listlog.service
 touch tmp/list.log tmp/list.log.1
 
 # script will be run 
-    cat tmp/list.log >> tmp/list.log.1
+    cat tmp/list.log >> tmp/list.log.1 | zip -r listlog.zip /tmp/list.log.1
 #
     crontab -e # and edit
 
